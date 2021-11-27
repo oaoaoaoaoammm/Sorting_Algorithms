@@ -1,3 +1,5 @@
-# Hi dear
-this repo like list of sorts \
-you can suggest more and improve existing
+# Sorts
+This repo like list of sorts \
+I need your help in: \
+> suggest more \
+> improve existing

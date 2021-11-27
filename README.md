@@ -1,4 +1,4 @@
 # Hi dear,
-this repo /t like \t  list of sorts \n
+this repo like list of sorts /
 @dddd
 

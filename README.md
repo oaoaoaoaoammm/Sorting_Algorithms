@@ -5,8 +5,8 @@ I need your help in:
 - find more and add it
 - improve existing 
 - find mistakes 
-> sorry for my bad english🇷🇺
+sorry for my bad english🇷🇺
 # Tests
 > int array length = 100000 random elements \
 > Medium run job \
-> Intel Core i5-1038NG7 CPU 2.00GHz, 1 CPU, 8 logical and 4 physical cores \
+> Intel Core i5-1038NG7 CPU 2.00GHz, 1 CPU, 8 logical and 4 physical cores

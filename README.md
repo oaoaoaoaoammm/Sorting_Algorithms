@@ -1,17 +1,34 @@
 # Sorts
 This repo like list of sorts which created on c#. \
 I collect here all sorts which I know. Here only code and you need to re-write some of them by yourself. If you want to know something about sort - use Google ^_^ \
+Sorts:
+- BubbleSort 
+- BucketSort
+- CocktailSort
+- CombSort
+- GnomeSort
+- HeapSort
+- InserationSort
+- MergeSort
+- SelectionSort
+- ShellSort
+
 I need your help in:
 - find more and add it
 - improve existing 
-- find mistakes \
-\
+- find mistakes 
+
 sorry for my bad english🇷🇺
 # Tests
 > int array length = 100000 random elements \
 > Medium run job \
 > Intel Core i5-1038NG7 CPU 2.00GHz, 1 CPU, 8 logical and 4 physical cores \
-> Counting sort and Tim sort threw me exception &_&
+> Counting sort and Tim sort threw me exception &_& 
+
+The fattest - Bucket sort \
+The longest - Gnome sort \
+The slowest - Selection sort \
+The best - Merge sort !
 
 |         Method |            Mean |         Error |        StdDev |       StdErr |             Min |              Q1 |          Median |              Q3 |             Max |       Op/s |     Gen 0 |    Gen 1 |    Gen 2 |   Allocated |
 |--------------- |----------------:|--------------:|--------------:|-------------:|----------------:|----------------:|----------------:|----------------:|----------------:|-----------:|----------:|---------:|---------:|------------:|

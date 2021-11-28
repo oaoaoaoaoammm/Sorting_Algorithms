@@ -1,7 +1,7 @@
 # Sorts
-This repo like list of sorts \
+This repo like list of sorts which created on c# \
 I need your help in:
-- suggest more 
-- improve existing
-#Test
-#=========================================
+- find more and add it
+- improve existing 
+# Tests
+

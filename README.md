@@ -6,4 +6,6 @@ I need your help in:
 - improve existing 
 > sorry for my bad english🇷🇺
 # Tests
-
+> int array length = 100000 random elements \
+> Medium run job \
+> Intel Core i5-1038NG7 CPU 2.00GHz, 1 CPU, 8 logical and 4 physical cores \

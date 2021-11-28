@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cocktail_sort", "Cocktail_sort.csproj", "{5E9934A7-8E89-4D16-A4FD-5572E77754C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E9934A7-8E89-4D16-A4FD-5572E77754C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9934A7-8E89-4D16-A4FD-5572E77754C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9934A7-8E89-4D16-A4FD-5572E77754C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9934A7-8E89-4D16-A4FD-5572E77754C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59FFC9D8-C335-45D6-8038-F4797B47D417}
+	EndGlobalSection
+EndGlobal

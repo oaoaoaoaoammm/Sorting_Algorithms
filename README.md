@@ -4,7 +4,8 @@ I collect here all sorts which I know. Here only code and you need to re-write s
 I need your help in:
 - find more and add it
 - improve existing 
-- find mistakes 
+- find mistakes \
+\
 sorry for my bad english🇷🇺
 # Tests
 > int array length = 100000 random elements \

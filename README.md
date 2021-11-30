@@ -6,6 +6,7 @@ Sorts:
 - BucketSort
 - CocktailSort
 - CombSort
+- CountingSort
 - GnomeSort
 - HeapSort
 - InserationSort

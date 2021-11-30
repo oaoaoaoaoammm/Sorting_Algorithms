@@ -7,25 +7,35 @@ namespace Counting_sort
         static void Main(string[] args)
         {
         }
-        static void Count(char[] arr)
+        static void countingsort(int[] Array)
         {
-            int n = arr.Length;
-            char[] output = new char[n];
-            int[] count = new int[256];
-
-            for (int i = 0; i < 256; ++i)
-                count[i] = 0;
-            for (int i = 0; i < n; ++i)
-                ++count[arr[i]];
-            for (int i = 1; i <= 255; ++i)
-                count[i] += count[i - 1];
-            for (int i = n - 1; i >= 0; i--)
+            int n = Array.Length;
+            int max = 0;
+            for (int i = 0; i < n; i++)
             {
-                output[count[arr[i]] - 1] = arr[i];
-                --count[arr[i]];
+                if (max < Array[i])
+                {
+                    max = Array[i];
+                }
             }
-            for (int i = 0; i < n; ++i)
-                arr[i] = output[i];
+            int[] freq = new int[max + 1];
+            for (int i = 0; i < max + 1; i++)
+            {
+                freq[i] = 0;
+            }
+            for (int i = 0; i < n; i++)
+            {
+                freq[Array[i]]++;
+            }
+            for (int i = 0, j = 0; i <= max; i++)
+            {
+                while (freq[i] > 0)
+                {
+                    Array[j] = i;
+                    j++;
+                    freq[i]--;
+                }
+            }
         }
     }
 }

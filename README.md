@@ -12,6 +12,7 @@ Sorts:
 - MergeSort
 - SelectionSort
 - ShellSort
+- TimSort
 
 I need your help in:
 - find more and add it
@@ -23,7 +24,6 @@ sorry for my bad english🇷🇺
 > int array length = 100000 random elements \
 > Medium run job \
 > Intel Core i5-1038NG7 CPU 2.00GHz, 1 CPU, 8 logical and 4 physical cores \
-> Counting sort and Tim sort threw me exception &_& 
 
 The fattest - Bucket sort \
 The longest - Gnome sort \

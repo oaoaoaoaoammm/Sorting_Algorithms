@@ -7,70 +7,85 @@ namespace Tim_sort
         static void Main(string[] args)
         {
         }
-        public static void insertionSort(int[] arr, int left, int right)
+    }
+    class TimSort
+    {
+        const int RUN = 32;
+        static int min(int a, int b)
         {
-            for (int i = left + 1; i <= right; i++)
+            if (a < b)
+                return a;
+            else
+                return b;
+        }
+        static void insertionSort(int[] a, int beg, int end)
+        {
+            int i, j, temp;
+            for (i = beg + 1; i <= end; i++)
             {
-                int temp = arr[i];
-                int j = i - 1;
-                while (arr[j] > temp && j >= left)
+                temp = a[i];
+                j = i - 1;
+                while (j >= beg && temp <= a[j])
                 {
-                    arr[j + 1] = arr[j];
-                    j--;
+                    a[j + 1] = a[j];
+                    j = j - 1;
                 }
-                arr[j + 1] = temp;
+                a[j + 1] = temp;
             }
         }
-        public static void merge(int[] arr, int l, int m, int r)
+        public static void merge(int[] a, int beg, int mid, int end)
         {
-            int len1 = m - l + 1, len2 = r - m;
-            int[] left = new int[len1];
-            int[] right = new int[len2];
-            for (int x = 0; x < len1; x++)
-                left[x] = arr[l + x];
-            for (int x = 0; x < len2; x++)
-                right[x] = arr[m + 1 + x];
-            int i = 0;
-            int j = 0;
-            int k = l;
-            while (i < len1 && j < len2)
+            int i, j, k;
+            int n1 = mid - beg + 1;
+            int n2 = end - mid;
+            int[] LeftArray = new int[n1];
+            int[] RightArray = new int[n2];
+            for (i = 0; i < n1; i++)
+                LeftArray[i] = a[beg + i];
+            for (j = 0; j < n2; j++)
+                RightArray[j] = a[mid + 1 + j];
+            i = 0;
+            j = 0;
+            k = beg;
+            while (i < n1 && j < n2)
             {
-                if (left[i] <= right[j])
+                if (LeftArray[i] <= RightArray[j])
                 {
-                    arr[k] = left[i];
+                    a[k] = LeftArray[i];
                     i++;
                 }
                 else
                 {
-                    arr[k] = right[j];
+                    a[k] = RightArray[j];
                     j++;
                 }
                 k++;
             }
-            while (i < len1)
+            while (i < n1)
             {
-                arr[k] = left[i];
-                k++;
+                a[k] = LeftArray[i];
                 i++;
-            }
-            while (j < len2)
-            {
-                arr[k] = right[j];
                 k++;
-                j++;
             }
-        } 
-        public static void timSort(int[] arr, int n)
-        { 
-            for (int i = 0; i < n; i += 32)
-                insertionSort(arr, i, Math.Min((i + 31), (n - 1)));
-            for (int size = 32; size < n; size = 2 * size)
+            while (j < n2)
             {
-                for (int left = 0; left < n; left += 2 * size)
+                a[k] = RightArray[j];
+                j++;
+                k++;
+            }
+        }
+        public static void timSort(int[] a, int n)
+        {
+            for (int i = 0; i < n; i += RUN)
+                insertionSort(a, i, min((i + RUN - 1), (n - 1)));
+            for (int size = RUN; size < n; size = 2 * size)
+            {
+                for (int beg = 0; beg < n; beg += 2 * size)
                 {
-                    int mid = left + size - 1;
-                    int right = Math.Min((left + 2 * size - 1), (n - 1));
-                    merge(arr, left, mid, right);
+                    int mid = beg + size - 1;
+                    int end = min((beg + 2 * size - 1), (n - 1));
+                    if (mid < end)
+                        merge(a, beg, mid, end);
                 }
             }
         }

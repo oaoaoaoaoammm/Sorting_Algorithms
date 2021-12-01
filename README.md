@@ -15,12 +15,6 @@ Sorts:
 - ShellSort
 - TimSort
 
-I need your help in:
-- find more and add it
-- improve existing 
-- find mistakes 
-
-sorry for my bad english🇷🇺
 # Tests
 > int[100000] arr = 1000000 random elements \
 > Medium run job \

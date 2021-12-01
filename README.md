@@ -50,8 +50,8 @@ The best - Merge sort ⚠️
 # Wikipedia's table
 
 [Here](https://en.wikipedia.org/wiki/Sorting_algorithm) you can find information and O(n) notations about sorts. I'm very lazy to search code and add them here, but you can help this project in 5 steps ^_^ \
-1) write/copy code \
-2) open Issue \
-3) add sort name in title of issue \
-4) submit new issue \
+1) write/copy code 
+2) open Issue 
+3) add sort name in title of issue 
+4) submit new issue 
 5) chill and wait when I'll check and add your code(if u want, I can mention you)

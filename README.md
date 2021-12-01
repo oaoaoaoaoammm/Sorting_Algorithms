@@ -22,7 +22,7 @@ I need your help in:
 
 sorry for my bad english🇷🇺
 # Tests
-> int[1000000] arr = 1000000 random elements \
+> int[100000] arr = 1000000 random elements \
 > Medium run job \
 > Intel Core i5-1038NG7 CPU 2.00GHz, 1 CPU, 8 logical and 4 physical cores \
 

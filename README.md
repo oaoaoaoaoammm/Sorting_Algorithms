@@ -45,7 +45,7 @@ The best - Merge sort ⚠️
 
 [Here](https://en.wikipedia.org/wiki/Sorting_algorithm) you can find information and O(n) notations about sorts. 
 
-#Support
+# Support
 
 I'm very lazy to search code and add them here, but you can help this project in 5 steps ^_^ 
 1) write/copy code 
